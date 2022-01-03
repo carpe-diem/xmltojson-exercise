@@ -27,11 +27,11 @@ class XMLConversionTestCase(TestCase):
             })
             self.assertEqual(response.status_code, 200)
             self.assertEqual(response.json(), {
-                "Addresses": [
+                "Root": [
                     {
                         "Address": [
                             {"StreetLine1": "123 Main St."},
-                            {"StreetLine2": "Suite 400"},
+                            {"StreetLine2": "Suite 4"},
                             {"City": "San Francisco"},
                             {"State": "CA"},
                             {"PostCode": "94103"},
